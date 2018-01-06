@@ -4,9 +4,9 @@
 	<h2> This is a Test page for demonstrating Jenkins Integration</h2>
 <form>
 	First name:<br>
-	 	<input type="text" name="Sagarfirstname"><br>
+	 	<input type="text" name="Sagar"><br>
         Last name:<br>
-                <input type="text" name="lastname"><br>
+                <input type="text" name="Phadke"><br>
         Address:<br>
                 <input type="text" name="Address"><br>
         Age:<br>
