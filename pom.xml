@@ -11,11 +11,17 @@
 <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
-    <version>4.4</version>
+    <version>4.4.1</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.2</version>
     <scope>test</scope>
 </dependency>
   </dependencies>
   <build>
-    <finalName>Helloworldwebapp</finalName>
+    <finalName>Helloworldwebapp_Master</finalName>
   </build>
 </project>
