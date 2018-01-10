@@ -11,11 +11,11 @@
 <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
-    <version>4.4.2</version>
+    <version>4.4.3</version>
     <scope>test</scope>
 </dependency>
   </dependencies>
   <build>
-    <finalName>Helloworldwebapp_FromGUI</finalName>
+    <finalName>Helloworldwebapp_ChangedFromBASH</finalName>
   </build>
 </project>
