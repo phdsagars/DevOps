@@ -1,19 +1,18 @@
 node {
-stage ('scm') {
-checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/ganeshhp/helloworldweb.git']]])
 
-}
+checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
+doGenerateSubmoduleConfigurations: false, 
+extensions: [], 
+submoduleCfg: [], 
+userRemoteConfigs: [[url: 'https://github.com/phdsagars/DevOps.git']]])
 
-stage ('build') {
-sh 'mvn -f pom.xml clean package'
 
-}
+sh 'mvn clean package'
 
-stage ('archive') {
-archiveArtifacts 'target/*.war'
-}
+archiveArtifacts 'target/Helloworldwebapp_ChangedFromBASH.war'
 
-stage ('deploy') {
-sh 'cp target/*war /opt/apache-tomcat-8.5.21/webapps/'
-}
+sh '''sudo cp target/Helloworldwebapp_ChangedFromBASH.war /usr/share/tomcat7-root
+sudo service tomcat7 stop
+sudo service tomcat7 start'''
+
 }
